@@ -163,7 +163,7 @@ main {
   color: #757575;
 }
 
-/*Seccuion de Tablas*/
+/*Seccion de Tablas*/
 /*TABLA N°1*/
 .main__currency__table {
   width: 70%;
@@ -350,4 +350,125 @@ main {
   margin-top: 15px;
   padding: 8px;
   color: var(--warm-black);
+}
+
+/* 2DA SECCION */
+
+.main__product__detail
+{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height:auto;
+  padding: 20px 10px;
+  background-color: var(--black);
+}
+.product__detail__batata_logo
+{
+  position: absolute;
+  width:40px;
+  height:25px;
+  top:-10px;
+  left:calc(50% - 20px);
+  background-image:url('./assets/icons/batata.svg');
+}
+.product__detail__title
+{
+  width:90%;
+  min-width: 288px;
+  height:auto;
+  margin: 0 auto;
+  margin-top:50px;
+  text-align: center;
+}
+.product__detail__title h2
+{
+  margin-bottom:20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height:2.6rem;
+  color:var(--just-white);
+}
+.product__detail__title p
+{
+  margin-bottom:20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height:1.8rem;
+  color:#808080;
+}
+.product__cards__container .product__detail__card
+{
+  width: 90%;
+  min-width: 288px;
+  max-width:400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding:15px;
+  background-color:var(--warm-black);
+  border-radius:5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product__cards__container .product__detail__card .clock
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background: url('./assets/icons/clock.svg') center/cover no-repeat;
+}
+.product__cards__container .product__detail__card .eye
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background: url('./assets/icons/eye.svg') center/cover no-repeat;
+}
+.product__cards__container .product__detail__card .money
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background: url('./assets/icons/dollar-sign.svg') center/cover no-repeat;
+}
+.product__cards__container .product__detail__card .check
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background: url('./assets/icons/check-circle.svg') center/cover no-repeat;
+}
+.product__detail__card .product__card_title
+{
+  margin-bottom:15px;
+  font-size:1.8rem;
+  font-weight: bold;
+  line-height:1.8rem;
+  color:var(--just-white)
+}
+.product__detail__card .product__card_body
+{
+  font-size: 1.4rem;
+  font-weight:500;
+  line-height:1.8rem;
+  color:#808080;
+}
+/* 3RA SECCION */
+.img__publi
+{
+  width:100%;
+  min-width: 320px;
+  min-height:387px;
+  background: url('./assets/img/bitcoinbaby2x.jpg') center/cover no-repeat;
+  text-align: center;
+}
+.img__publi h2
+{
+  padding-top:60px;
+  font-size:2.6rem;
+  font-weight: bold;
+  color:var(--just-white);
 }
