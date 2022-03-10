@@ -50,6 +50,8 @@ header img {
   height: 110px;
   margin-top: 60px;
   align-self: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 15px ;
 }
 
 .header__title_container {
@@ -116,6 +118,7 @@ main {
   height: auto;
   background-color: var(--off-white);
 }
+/* 1RA SECCION */
 
 .main__precios__container {
   width: 100%;
@@ -123,6 +126,7 @@ main {
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: var(--off-white);
 }
 
 .main__precios__container .main__precios__container__title {
@@ -137,7 +141,7 @@ main {
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url("./assets/img/Bitcoin.svg");
+  background-image: url("./assets/img/uñas1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -300,6 +304,7 @@ main {
   border: 1px solid var(--off-white);
   justify-content:center;
   align-items: center;
+  border-radius: 8px;
 }
 
 .main__comi__container .main__grid__container .value {
