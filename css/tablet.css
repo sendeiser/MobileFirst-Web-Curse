@@ -1,6 +1,7 @@
 .main__tables__container
 {
     justify-content: center;
+    overflow-x:hidden;
 }
 
 .product__cards__container
@@ -12,5 +13,6 @@
 }
 .plans__container_slider
 {
-  justify-content: center;  
+  justify-content: center;
+  overflow-x:hidden; 
 }
