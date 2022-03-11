@@ -28,6 +28,7 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -46,8 +47,8 @@ header {
 }
 
 header img {
-  width: 180px;
-  height: 110px;
+  width: 200px;
+  height: 120px;
   margin-top: 60px;
   align-self: center;
   border-radius: 8px;
@@ -128,6 +129,13 @@ main {
   text-align: center;
   background-color: var(--off-white);
 }
+.main__tables__container 
+{
+  display: flex;
+  overflow-x:scroll;
+  overscroll-behavior-x:contain ;
+  scroll-snap-type:x proximity;
+}
 
 .main__precios__container .main__precios__container__title {
   width: 90%;
@@ -170,8 +178,9 @@ main {
   min-width: 235px;
   max-width: 500px;
   height: 360px;
-  margin: 0 auto;
+  margin: 0 25px;
   font-family: "Inter", sans-serif;
+  scroll-snap-align: center;
 }
 
 .main__currency__table .main__currency__table__title {
@@ -269,8 +278,9 @@ main {
   min-width: 235px;
   max-width: 500px;
   height: 360px;
-  margin: 0 auto;
+  margin: 0 20px;
   font-family: "Inter", sans-serif;
+  scroll-snap-align: center;
 }
 
 .main__comi__container .main__comi__container__title {
@@ -472,3 +482,200 @@ main {
   font-weight: bold;
   color:var(--just-white);
 }
+/*4TA SECCION*/
+.main__plans_container
+{
+  width:100%;
+  min-width: 320px;
+  padding-bottom:70px;
+  text-align:center;
+}
+.plans__title
+{
+  width:90%;
+  min-width: 288px;
+  height:auto;
+  margin: 0 auto;
+  margin-bottom:50px;
+}
+.plans__title h2
+{
+  padding-top: 50px;
+  font-size:2.3rem;
+  font-weight:bold;
+  line-height:2.6rem;
+  color: var(--black);
+}
+.plans__title p
+{
+  padding-top:30px;
+  font-size:1.4rem;
+  font-weight:500;
+  line-height:1.8rem;
+  color:#757575;
+}
+.plan__container_card,
+.plan__container_card_1,
+.plan__container_card_2
+{
+  position: relative;
+  width: 70%;
+  min-width: 190px;
+  max-width:300px;
+  min-height: 288px;
+  margin: 50px 8px;
+  padding: 0 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+  text-align: center;
+  scroll-snap-align: center;
+}
+.plan__container_card
+{
+  background:linear-gradient(180deg,#4D77FF,#F7F7F7);
+}
+.plan__container_card_1
+{
+  background:linear-gradient(180deg,#FFB72B,#F7F7F7);
+}
+.plan__container_card_2
+{
+  background:linear-gradient(180deg,#313552,#F7F7F7);
+}
+.recomendado,
+.basico,
+.experto
+{
+  position:absolute;
+  top:-15px;
+  left:calc(50% - 55px);
+  width: 110px;
+  height:31px;
+  padding:8px;
+  color: var(--just-white);
+  border-radius:8px;
+  font-size:1.2rem;
+  font-weight: 700;
+  line-height:1.5rem;
+  text-align: center;
+}
+.basico
+{
+  background-color: #1a9af7;
+}
+.recomendado
+{
+  background-color: #cc9644e5;
+}
+.experto
+{
+  background-color: #21325E;
+}
+.plan__info__title
+{
+  font-size:1.4rem;
+  font-weight:500;
+  line-height:1.8rem;
+  color:#000000;
+  padding-top:31px;
+  padding-bottom: 8px;
+}
+.plan__info__price
+{
+  font-size:5.2rem;
+  font-weight:700;
+  line-height:6.3rem;
+  letter-spacing: -0.08em;
+  padding-bottom: 16px;
+}
+.plan__info__price span
+{
+  position: relative;
+  bottom:3rem;
+  font-family: "Inter", sans-serif;
+  font-size:1.2rem;
+  font-weight:500;
+  line-height:1.45rem;
+  
+}
+.plan__info__saving
+{
+  font-size:1.2rem;
+  font-weight:500;
+  line-height:1.5rem;
+  color:#757575;
+  text-align:center;
+}
+.plan__info__ca,
+.plan__info__ca_1,
+.plan__info__ca_2
+{
+  width: 150px;
+  height: 48px;
+  background-color:var(--off-white);
+  border-radius:4px;
+  font-family: "DM Sans",sans-serif;
+  font-size:1.4rem;
+  font-weight:bold;
+  line-height:1.8rem;
+  margin-top:20px;
+  color:var(--black);
+  
+}
+.plan__info__ca{
+  border:2px solid #1a9af7;
+}
+.plan__info__ca_1{
+  border:2px solid #cc9644e5;
+}
+.plan__info__ca_2{
+  border:2px solid #21325E;
+}
+.plan__info__ca span,.plan__info__ca_1 span,.plan__info__ca_2 span
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image:url('./assets/icons/orange-right-arrow.svg');
+  vertical-align: text-bottom;
+}
+.plans__container_slider
+{
+  display:flex;
+  height: auto;
+  overflow-x:scroll;
+  overscroll-behavior-x:contain ;
+  scroll-snap-type:x proximity;
+}
+footer
+{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color:rgb(172, 20, 20);
+}
+footer section 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+}
+.footer__left ul 
+{
+  font-size:1.4rem;
+  font-weight: 500;
+  line-height:1.8rem;
+  list-style: none;
+ 
+}
+.footer__left li
+{
+  margin: 10px 0;
+}
+.footer__left a
+{
+  text-decoration: none;
+  color: var(--just-white);
+}
+

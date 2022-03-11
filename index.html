@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:930px)">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="header__title_container">
             <h1>La proxima revolucion en el diseño de uñas.</h1>
             <p>En nuestra web te ayudara a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header__button">Conoce nuestros planes<span></span></a>
+            <a href="#plans" class="header__button">Conoce nuestros planes<span></span></a>
         </div>
     </header>
     <main>
@@ -109,10 +110,60 @@
         <section class="img__publi">
             <h2>Conocenos Hoy.</h2>
         </section>
-        <section></section>
-        <section></section>
+        <section id="plans" class="main__plans_container">
+            <div class="plans__title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+            <section class="plans__container_slider">
+                <article class="plan__container_card">
+                    <p class="basico">Basico</p>
+                    <div class="plan__info__container">
+                        <h3 class="plan__info__title">Pago Mensual</h3>
+                        <p class="plan__info__price"><span>$</span> 19</p>
+                        <p class="plan__info__saving">*Acceso limitado a un par de funcionalidades.</p>
+                        <button class="plan__info__ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plan__container_card_1">
+                    <p class="recomendado">Recomendado</p>
+                    <div class="plan__info__container">
+                        <h3 class="plan__info__title">Pago Semestral</h3>
+                        <p class="plan__info__price"><span>$</span> 59</p>
+                        <p class="plan__info__saving">*Acceso a la información en tiempo real.<br>*No incluye asesoria</p>
+                        <button class="plan__info__ca_1">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plan__container_card_2">
+                    <p class="experto">Experto</p>
+                    <div class="plan__info__container">
+                        <h3 class="plan__info__title">Pago Anual</h3>
+                        <p class="plan__info__price"><span>$</span> 99</p>
+                        <p class="plan__info__saving">*Todas los benecios desbloqueados ilimitadamente<br>*Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan__info__ca_2">Escoger este <span></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="footer__left">
+            <ul>
+                <li>
+                    <a href="#">Linkedin</a>
+                </li>
+                <li>
+                    <a href="#">Crunchbase</a>
+                </li>
+                <li>
+                    <a href="#">HackerNews</a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer__right">
+            <img src="./assets/img/logo-footer.svg" alt="Logo de batabit 2020">
+        </section>
+    </footer>
 </body>
 
 </html>
